@@ -28,7 +28,7 @@ public class PlayerPrefsController : MonoBehaviour
 
     // Getter for Master Volume
     public static float GetMasterVolume(){
-        return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
+        return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY, 0.2f);
     } 
 
 
@@ -48,6 +48,6 @@ public class PlayerPrefsController : MonoBehaviour
     // Getter difficulty
 
     public static float GetDifficulty(){
-        return PlayerPrefs.GetFloat(DIFFICULTY_KEY);
+        return PlayerPrefs.GetFloat(DIFFICULTY_KEY, 0f);
     } 
 }
